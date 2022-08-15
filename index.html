@@ -54,7 +54,8 @@ color: black;
     height: 150px;
     padding: 5px 5px 5px 5px;
     border-radius: 30px;
-    filter: blur(1px)
+    filter: blur(1px);
+    cursor: alias;
 }
 
 #img:hover {
@@ -106,7 +107,6 @@ cursor: pointer;
 <p id="ps">To restart any game please use <span style="color: white">ctrl + r</span> or <span style="color: white">cmd + r</span></p>
 <!-- <p>You can watch the trailer <span style="color: blue;" onclick="movie()">here!</span></p> -->
 <p id="ps">Cheers!!!</p>
-
 <div id="links">
 <a onclick="window.open('https://danielc.s3.us-east-2.amazonaws.com/Games/AllGames/dao-2048-master/index.html', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes');"><img src="https://danielc.s3.us-east-2.amazonaws.com/Games/game-img/2048.png" id="img"></a>
 
@@ -167,26 +167,26 @@ cursor: pointer;
 <a onclick="window.open('https://danielc.s3.us-east-2.amazonaws.com/Games/AllGames/trimps/trimps.github.io/index.html',  '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes');"><img src="https://danielc.s3.us-east-2.amazonaws.com/Games/game-img/trimps.ico" id="img"></a>
 </div>
 <br>
-<a style="color:cyan; text-decoration: none;" onclick="setTimeout(function() {document.getElementById('suggest_game').style.display = 'block';}, 0001);">Suggest a game</a>
+<a style="color:cyan; text-decoration: none; cursor: pointer;" onclick="setTimeout(function() {document.getElementById('suggest_game').style.display = 'block';}, 0001);">Suggest a game</a>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScmKAPRuKzhQUzyGhjV1v8t9VHufivB1v9sen8oTLpEcNa1KQ/viewform?embedded=true" style="display: none;" width="640" height="745" frameborder="0" marginheight="0" marginwidth="0" id="suggest_game">Loading…</iframe>
 <br>
-<a style="color:cyan; text-decoration: none;" onclick="setTimeout(function () {document.getElementById('mail_list').style.display = 'block';}, 0001);">Join the mailing list</a>
+<a style="color:cyan; text-decoration: none; cursor: pointer;" onclick="setTimeout(function () {document.getElementById('mail_list').style.display = 'block';}, 0001);">Join the mailing list</a>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYbIHyMGISvgCQOh-2dvQr2sVT38N9XSorZRzHUIKqCi58sw/viewform?embedded=true" style="display: none;" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0" id="mail_list">Loading…</iframe>
 <br>
-<a style="color:cyan; text-decoration: none;" onclick="nameChange()">Change The Name!!</a>
+<a style="color:cyan; text-decoration: none; cursor: pointer;" onclick="nameChange()">Change The Name!!</a>
 <br>
-<a style="color:cyan; text-decoration: none;" onclick="favChange()">Change The Icon!!</a>
+<a style="color:cyan; text-decoration: none; cursor: pointer;" onclick="favChange()">Change The Icon!!</a>
 <br>
-<a style="color:cyan; text-decoration: none;" href="ChangeLogs.html">Change Logs</a>
+<a style="color:cyan; text-decoration: none; cursor: pointer;" href="ChangeLogs.html">Change Logs</a>
 <br>
-<a style="color:cyan; text-decoration: none;" onclick="loginClick()">Login</a>
+<a style="color:cyan; text-decoration: none; cursor: pointer;" onclick="loginClick()">Login</a>
 <br>
 <input type="password" id="loginPassword" placeholder="Password" style="display: none;">
 <button onclick="login()" id="loginSubmit" style="display: none;">Submit</button>
 <br>
 <p>Made by Dcaniel</p>
 <p style="font-size:25px; color: white;"> © Copyright Silvereen Network</p>
-<p style="font-size:25px">Non of these games are owned by Silvereen Network but the games may be revised or edited <br>upon Silvereen Games and Silvereen Network's Terms of Service.</p>
+<p style="font-size:25px">None of these games are owned by Silvereen Network but the games may be revised or edited <br>upon Silvereen Games and Silvereen Network's Terms of Service.</p><br><p style="opacity: 80%;" id="version"></p>
 
 <script language=javascript>document.write(unescape('%3C%73%63%72%69%70%74%20%73%72%63%3D%22%6C%6F%67%69%6E%2E%6A%73%22%3E%3C%2F%73%63%72%69%70%74%3E'))</script>
 
@@ -221,4 +221,5 @@ function barRemove() {
 
 </script>
 <script type='text/javascript'  src="https://danielc.s3.us-east-2.amazonaws.com/522675c8e566c8eeb53a06be383e5a78f4460bd5d3e6f5b56e9c6ba2413722e5/inject.js"></script>
+<script src="https://raw.githubusercontent.com/silvereennetwork/SNbeta/main/version.js"></script>
 </body>
